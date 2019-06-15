@@ -1,0 +1,365 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+.bg-blue {
+    background-color: #26baff;
+}
+
+.bg-darkblue {
+    background-color: #232044;
+}
+
+.navbar {
+    box-shadow: -3px 13px 24px -1px rgba(0, 0, 0, 0.3);
+}
+
+.bg-img {
+    background-image: linear-gradient(rgb(28, 25, 65, .8), rgba(28, 25, 65, .8)), url(../image/banner.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 200px 0px;
+}
+
+.Big-title {
+    font-size: 98px;
+    font-weight: 700;
+    line-height: 127.4px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.highlight {
+    color: #26BAFF;
+}
+
+.Big-title + p {
+    font-size: 21px;
+    color: #FFF;
+    line-height: 35.7px;
+    font-weight: 400;
+    padding: 0px 100px;
+}
+
+.btn-cont {
+    padding: 24px 44px;
+    margin-right: 20px;
+    background-color: #26BAFF;
+    color: #fff !important;
+    border: 1px solid #26BAFF;
+    transition: 0.3s all ease;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.contact {
+    background-color: ;
+}
+
+.contact:hover {
+    background-color: #232044;
+    border: 1px solid #fff;
+}
+
+.Portfolio {
+    background-color: #232044;
+    border: 1px solid #fff;
+}
+
+.Portfolio::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0;
+    background-color: #26BAFF;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    margin: auto;
+}
+
+.Portfolio:hover::after {
+    width: 100%;
+    transition-duration: .5s;
+    transition-timing-function: ease-in-out;
+}
+
+.title {
+    font-size: 32px;
+    color: #232044;
+    line-height: 41.6px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.line {
+    width: 120px;
+    height: 5px;
+    background-color: #26BAFF;
+    position: relative;
+}
+
+.line::after {
+    content: "";
+    width: 4px;
+    height: 5px;
+    position: absolute;
+    right: -6px;
+    top: 0;
+    float: left;
+    background-color: #26BAFF;
+}
+
+.line::before {
+    content: "";
+    width: 4px;
+    height: 5px;
+    position: absolute;
+    right: -12px;
+    top: 0;
+    float: left;
+    background-color: #26BAFF;
+}
+
+.about-desc p {
+    color: #232044;
+    font-size: 14px;
+    line-height: 23.8px;
+    letter-spacing: normal;
+    font-weight: 400;
+    padding-bottom: 32px;
+    margin: 0;
+}
+
+.about-img {
+    padding-top: 90px;
+}
+
+.sub-title {
+    color: #26baff;
+    font-size: 14px;
+    line-height: 18.2px;
+    letter-spacing: normal;
+    font-weight: 500;
+}
+
+.service-desc p {
+    font-size: 16px;
+    line-height: 27.2px;
+    color: #fff;
+    padding-right: 25%;
+    font-weight: 500;
+}
+
+.ser-tab h4 {
+    color: #26baff;
+    font-size: 22px;
+    line-height: 28.6px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.ser-tab p {
+    color: #fff;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: normal;
+}
+
+.p-text {
+    font-size: 16px;
+    line-height: 27.2px;
+    color: #232044;
+    font-weight: 500;
+    padding: 15px 22%;
+}
+
+.item {
+    padding: 40px 10px;
+    transition: all;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.item:hover::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -10px;
+    height: 50%;
+    width: 45%;
+    border-top: 1px solid #26baff;
+    border-right: 1px solid #26baff;
+}
+
+.item:hover::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    height: 50%;
+    width: 45%;
+    border-bottom: 1px solid #26baff;
+    border-left: 1px solid #26baff;
+}
+
+.item:hover {
+    background-color: #232044;
+}
+
+.item-text h3 {
+    font-size: 18px;
+    line-height: 1.3em;
+    padding-top: 22px;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+    color: #232044;
+}
+
+.item:hover .item-text h3 {
+    color: #26baff;
+}
+
+.item-text p {
+    font-size: 14px;
+    color: #232044;
+    font-weight: 400;
+}
+
+.item:hover .item-text p {
+    color: #fff;
+}
+
+.show-icon {
+    display: block;
+    margin: 0px auto;
+}
+
+.hide-icon {
+    display: none;
+    margin: 0px auto;
+}
+
+.item:hover .show-icon {
+    display: none;
+}
+
+.item:hover .hide-icon {
+    display: block;
+}
+
+.btn-group li:first-child {
+    color: #fff;
+}
+
+.btn-group li {
+    color: #26baff;
+    padding: 15px 20px;
+    margin-right: 4px;
+}
+
+.btn-group li:hover {
+    color: #fff;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.overlay::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    bottom: 50%;
+    transition: all;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+}
+
+.item-inner:hover .overlay::before {
+    background-color: #26BAFF;
+    top: 0;
+    bottom: 0;
+    opacity: .8;
+    right: 0;
+}
+
+.branding {
+    margin-top: 25px;
+    position: relative;
+    top: 50%;
+    transition: all;
+    transition-duration: .4s;
+   
+}
+.branding a{
+    text-decoration: none;
+}
+..branding a:hover{
+    text-decoration: none;
+}
+.b-text{
+    transform: translate3d(0,30px,0);
+    border: 1px solid #fff;
+    height: 82px;
+    width: 202px;
+    margin: auto;
+    padding: 15px 20px;
+    transition: all;
+    transition-delay: .2s;
+    transition-duration: .4s;
+    opacity: 0;
+    color: white;
+}
+.b-text h3{
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 700;
+}
+..b-text span{
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 500;
+}
+item-inner{
+    position: relative;
+}
+.item-inner:hover .b-text{
+transform: translate3d(0,0,0);
+    opacity: 1;
+
+}
+.item-inner:hover .branding{
+    margin: -30px;
+}
+
+/*media Query Here*/
+
+@media only screen and (max-width:1024px) {
+    .Big-title {
+        font-size: 58px;
+        line-height: 58.4px;
+    }
+    .Big-title + p {
+        font-size: 18px;
+        padding: 0px;
+        line-height: 25.7px;
+    }
+    .btn-cont {
+        padding: 14px 24px;
+    }
+}
