@@ -257,17 +257,17 @@ body {
     display: block;
 }
 
-.btn-group li:first-child {
+.btn-group button:first-child {
     color: #fff;
 }
 
-.btn-group li {
+.btn-group button {
     color: #26baff;
-    padding: 15px 20px;
+    padding: 10px 8px;
     margin-right: 4px;
 }
 
-.btn-group li:hover {
+.btn-group button:hover {
     color: #fff;
 }
 
@@ -290,6 +290,10 @@ body {
     transition-timing-function: ease;
 }
 
+.item-inner {
+    position: relative;
+}
+
 .item-inner:hover .overlay::before {
     background-color: #26BAFF;
     top: 0;
@@ -304,47 +308,153 @@ body {
     top: 50%;
     transition: all;
     transition-duration: .4s;
-   
+
 }
-.branding a{
+
+.branding a {
     text-decoration: none;
 }
-..branding a:hover{
+
+..branding a:hover {
     text-decoration: none;
 }
-.b-text{
-    transform: translate3d(0,30px,0);
+
+.b-text {
+    transform: translate3d(0, 30px, 0);
     border: 1px solid #fff;
     height: 82px;
     width: 202px;
     margin: auto;
-    padding: 15px 20px;
+    padding: 15px 10px;
     transition: all;
     transition-delay: .2s;
     transition-duration: .4s;
     opacity: 0;
     color: white;
 }
-.b-text h3{
+
+.b-text h3 {
     font-size: 16px;
     line-height: 26px;
     font-weight: 700;
 }
-..b-text span{
+
+..b-text span {
     font-size: 14px;
     line-height: 26px;
     font-weight: 500;
 }
-item-inner{
+
+item-inner {
     position: relative;
 }
-.item-inner:hover .b-text{
-transform: translate3d(0,0,0);
+
+.item-inner:hover .b-text {
+    transform: translate3d(0, 0, 0);
     opacity: 1;
 
 }
-.item-inner:hover .branding{
+
+.item-inner:hover .branding {
     margin: -30px;
+}
+
+.bg-promo {
+    background-image: linear-gradient(rgb(28, 25, 65, .8), rgba(28, 25, 65, .8)), url(../image/promo_bg.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 12% 0;
+}
+
+.fun-text span {
+    color: #fff;
+    font-size: 32px;
+    line-height: 26px;
+    font-weight: 700;
+}
+
+.fun-text h3 {
+    color: #fff;
+    font-size: 26px;
+    line-height: 32.8px;
+    font-weight: 500;
+}
+
+.author h3 {
+    color: #232044;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 33.8px;
+    padding: 0;
+    margin: 0;
+}
+
+.author span {
+    color: #232044;
+    font-size: 16px;
+    line-height: 27.2px;
+    font-weight: 400;
+
+}
+
+.team-img {
+    overflow: hidden;
+}
+
+.team-img img:hover {
+    transform: scale(1.1);
+    transition-duration: .15s;
+
+}
+
+.pkg::before {
+    content: "";
+    position: absolute;
+    height: 160px;
+    width: 100%;
+    background-color: #26BAFF;
+    left: -20px;
+    top: -35px;
+    transform: rotate(30deg);
+    border-radius: 70px;
+    z-index: -1;
+}
+
+.price h3 {
+    color: #fff;
+    font-size: 32px;
+    line-height: 41.6px;
+    font-weight: 600;
+    margin: 0;
+
+}
+
+.price span {
+    font-size: 16px;
+
+}
+
+.pkg-details li {
+    list-style: none;
+    font-size: 16px;
+    line-height: 27.2px;
+    font-weight: 600;
+    padding: 5px 0;
+}
+
+.actived {
+    transform: scale(1.1);
+    box-shadow: 0px 2px 10px 1px grey;
+    background-color: white;
+    z-index: 2;
+}
+
+.opac {
+    opacity: .5;
+}
+
+.imgopa {
+    opacity: 0;
 }
 
 /*media Query Here*/
@@ -354,11 +464,13 @@ transform: translate3d(0,0,0);
         font-size: 58px;
         line-height: 58.4px;
     }
+
     .Big-title + p {
         font-size: 18px;
         padding: 0px;
         line-height: 25.7px;
     }
+
     .btn-cont {
         padding: 14px 24px;
     }
